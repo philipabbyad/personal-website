@@ -3878,9 +3878,9 @@ textarea.form-control.is-invalid {
   left: 0px;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mx-auto {
@@ -3888,9 +3888,9 @@ textarea.form-control.is-invalid {
   margin-right: auto;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mx-4 {
@@ -3910,8 +3910,8 @@ textarea.form-control.is-invalid {
   margin-bottom: 2rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-4 {
@@ -3928,6 +3928,10 @@ textarea.form-control.is-invalid {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .-mt-4 {
@@ -4317,13 +4321,21 @@ textarea.form-control.is-invalid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pl-12 {
     padding-left: 3rem;
+  }
+
+  .lg\:pl-6 {
+    padding-left: 1.5rem;
+  }
+
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
   }
 
   .lg\:pb-0 {
