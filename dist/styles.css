@@ -4073,6 +4073,10 @@ textarea.form-control.is-invalid {
   border-radius: 0.5rem;
 }
 
+.rounded-br-xl {
+  border-bottom-right-radius: 0.75rem;
+}
+
 .bg-emerald-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(236 253 245 / var(--tw-bg-opacity));
@@ -4148,6 +4152,10 @@ textarea.form-control.is-invalid {
 
 .text-center {
   text-align: center;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .text-5xl {
