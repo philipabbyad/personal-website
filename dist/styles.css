@@ -3919,28 +3919,28 @@ textarea.form-control.is-invalid {
   margin-bottom: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .mb-16 {
   margin-bottom: 4rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .-mt-4 {
@@ -3987,18 +3987,6 @@ textarea.form-control.is-invalid {
   width: 100%;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
-
-.grow-0 {
-  flex-grow: 0;
-}
-
-.basis-auto {
-  flex-basis: auto;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -4013,14 +4001,6 @@ textarea.form-control.is-invalid {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-center {
@@ -4150,6 +4130,10 @@ textarea.form-control.is-invalid {
   text-align: center;
 }
 
+.font-sans {
+  font-family: Inter, sans-serif;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -4158,6 +4142,16 @@ textarea.form-control.is-invalid {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-3xl {
@@ -4191,14 +4185,14 @@ textarea.form-control.is-invalid {
   line-height: 1.25;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -4301,14 +4295,6 @@ textarea.form-control.is-invalid {
 @media (min-width: 1024px) {
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333%;
-  }
-
-  .lg\:w-5\/12 {
-    width: 41.666667%;
   }
 
   .lg\:grid-cols-5 {
