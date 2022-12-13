@@ -3896,11 +3896,6 @@ textarea.form-control.is-invalid {
   margin-right: auto;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -3983,6 +3978,10 @@ textarea.form-control.is-invalid {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -4037,6 +4036,10 @@ textarea.form-control.is-invalid {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -4049,8 +4052,13 @@ textarea.form-control.is-invalid {
   border-radius: 0.5rem;
 }
 
-.rounded-br-xl {
+.rounded-b-xl {
   border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-emerald-50 {
@@ -4066,6 +4074,11 @@ textarea.form-control.is-invalid {
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -4303,11 +4316,6 @@ textarea.form-control.is-invalid {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .lg\:pl-12 {
