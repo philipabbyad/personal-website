@@ -4,70 +4,80 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Phil Abbyad - Software Developer. Portfolio showcasing projects and skills.">
    <link href="/dist/styles.css" rel="stylesheet">
-   <title>Philip Abbyad</title>
+   <title>Philip Abbyad - Software Developer</title>
 </head>
 
 <body>
-   <header>
-      <a rel="me" href="https://fosstodon.org/@philipabbyad"></a>
-      <a href="https://github.com/philipabbyad" title="GitHub" aria-label="GitHub">
-         <img src="/images/icons/github_original.svg" width="39" height="39" alt="GitHub"/>
-      </a>
-      <a href="https://linkedin.com/in/philipabbyad" title="LinkedIn" aria-label="LinkedIn">
-         <img src="/images/icons/linkedin_plain.svg" width="39" height="39" alt="LinkedIn"/>
-      </a>
-      <a href="https://fosstodon.org/@philipabbyad" title="Mastodon" aria-label="Mastodon">
-         <img src="/images/icons/mastodon_plain.png" width="39" height="39" alt="Mastodon"/>
-      </a>
+   <header id="top">
       <h1>Philip Abbyad</h1>
-      <p>Hi! My name is Phil, I'm a software developer based in the U.S.</p>
-      <p>I use this space to continue learning and showcase what I build</p>
+      <p>Software Developer</p>
+      <nav aria-label="Social links">
+         <a href="https://github.com/philipabbyad" aria-label="GitHub">GitHub</a>
+         <a href="https://linkedin.com/in/philipabbyad" aria-label="LinkedIn">LinkedIn</a>
+         <a rel="me" href="https://fosstodon.org/@philipabbyad" aria-label="Mastodon">Mastodon</a>
+      </nav>
    </header>
 
-   <section>
-      <h2>About Me</h2>
-      <p>
-         I recently completed full-stack web development training through LaunchCode, with a focus on backend development.
-      </p>
-      <p>
-         Transitioning from a career in higher education and educational nonprofits.
-         Advocate of open source software and reducing barriers through the use of technology.
-      </p>
-
-      <h3>Languages/Databases</h3>
-      <p>Java, JavaScript, TypeScript, HTML, CSS, MySQL</p>
-
-      <h3>Frameworks</h3>
-      <p>Angular, Spring, Thymeleaf, Tailwind CSS</p>
-
-      <h3>Tools</h3>
-      <p>Git, Docker, Bash, Linux, VS Code</p>
-   </section>
-
-   <section>
-      <h2>Projects</h2>
-
-      <article>
-         <img src="/images/screenshots/volunteer_organizer.png" alt="Screenshot of Volunteer Organizer web application" />
-         <h3>Volunteer Organizer</h3>
+   <main>
+      <section id="about">
+         <h2>About</h2>
          <p>
-            Allows for the creation of volunteer opportunities by various organizations that potential volunteers can then sign-up for.
-            Created using Java, Spring Boot, Thymeleaf, Hibernate, Bootstrap, and MySQL.
+            Hi! I'm Phil, a software developer based in the U.S. I recently completed
+            full-stack web development training through LaunchCode, with a focus on
+            backend development.
          </p>
-         <a href="https://github.com/philipabbyad/volunteer-organizer">Source Code</a>
-      </article>
-
-      <article>
-         <img src="/images/screenshots/personal_website_html.png" alt="Screenshot of HTML code for personal website" />
-         <h3>Personal Website</h3>
          <p>
-            This website! Used as a portfolio to highlight projects.
-            Static HTML page.
+            Transitioning from a career in higher education and educational nonprofits.
+            Advocate of open source software and reducing barriers through technology.
          </p>
-         <a href="https://github.com/philipabbyad/personal-website">Source Code</a>
-      </article>
-   </section>
+      </section>
 
+      <section id="skills">
+         <h2>Skills</h2>
+         <dl>
+            <dt>Languages</dt>
+            <dd>Java, JavaScript, TypeScript, HTML, CSS, SQL</dd>
+
+            <dt>Frameworks</dt>
+            <dd>Spring, Angular, Thymeleaf</dd>
+
+            <dt>Tools</dt>
+            <dd>Git, Docker, Bash, Linux, VS Code</dd>
+         </dl>
+      </section>
+
+      <section id="projects">
+         <h2>Projects</h2>
+
+         <article>
+            <h3>Volunteer Organizer</h3>
+            <p>
+               A web application for creating volunteer opportunities that potential
+               volunteers can sign up for. Built with Java, Spring Boot, Thymeleaf,
+               Hibernate, and MySQL.
+            </p>
+            <a href="https://github.com/philipabbyad/volunteer-organizer">View Source</a>
+         </article>
+
+         <article>
+            <h3>Personal Website</h3>
+            <p>
+               This site! A minimal portfolio built with semantic HTML and CSS.
+            </p>
+            <a href="https://github.com/philipabbyad/personal-website">View Source</a>
+         </article>
+      </section>
+   </main>
+
+   <footer>
+      <p>
+         <a href="https://github.com/philipabbyad">GitHub</a> ·
+         <a href="https://linkedin.com/in/philipabbyad">LinkedIn</a> ·
+         <a rel="me" href="https://fosstodon.org/@philipabbyad">Mastodon</a>
+      </p>
+      <p><a href="#top">↑ Back to top</a></p>
+   </footer>
 </body>
 </html>
