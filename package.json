@@ -1,0 +1,15 @@
+{
+  "name": "personal-website",
+  "version": "2.0.0",
+  "description": "Personal portfolio site at philipabbyad.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipabbyad/personal-website.git"
+  },
+  "author": "Philip Abbyad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipabbyad/personal-website/issues"
+  },
+  "homepage": "https://www.philipabbyad.com/"
+}
