@@ -88,12 +88,13 @@ header h1::after {
 a {
    color: var(--color-accent);
    text-decoration: none;
-   transition: color 0.15s ease;
+   transition: color 0.15s ease, text-shadow 0.15s ease;
 }
 
 a:hover, a:focus {
    color: var(--color-accent-hover);
    text-decoration: underline;
+   text-shadow: 0 0 8px rgba(95, 158, 160, 0.5);
 }
 
 /* Layout */
