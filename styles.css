@@ -84,6 +84,14 @@ header h1::after {
    font-weight: 300;
 }
 
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+   header h1::after {
+      animation: none;
+      opacity: 1;
+   }
+}
+
 /* Links */
 a {
    color: var(--color-accent);
