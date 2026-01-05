@@ -1,11 +1,23 @@
-/* Minimal Portfolio Stylesheet */
+/* Retro-Tech Portfolio Stylesheet */
 
 :root {
-   --color-accent: #059669; /* emerald-600 */
-   --color-accent-hover: #047857; /* emerald-700 */
-   --color-text: #1f2937; /* gray-800 */
-   --color-text-light: #6b7280; /* gray-500 */
-   --color-bg: #fff;
+   /* Colors - Terminal/CRT inspired */
+   --color-bg: #0a0f0a;
+   --color-primary: #33ff33;
+   --color-primary-dim: #22aa22;
+   --color-primary-glow: rgba(51, 255, 51, 0.12);
+   --color-text: #b8c4b8;
+   --color-text-bright: #e0ffe0;
+   --color-text-dim: #6a7a6a;
+   --color-accent: #ffb000;
+   --color-accent-hover: #ffc940;
+   --color-border: #1a2a1a;
+
+   /* Typography */
+   --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
+   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+   /* Layout */
    --max-width: 40rem;
    --spacing: 1.5rem;
 }
@@ -23,7 +35,7 @@ html {
 }
 
 body {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+   font-family: var(--font-body);
    font-size: 1.125rem;
    line-height: 1.6;
    color: var(--color-text);
@@ -31,27 +43,63 @@ body {
    padding: var(--spacing);
 }
 
-/* Typography */
+/* Typography - Headings */
 h1, h2, h3 {
+   font-family: var(--font-mono);
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+   color: var(--color-text-bright);
    line-height: 1.2;
    margin-bottom: 0.5em;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 1.5rem; margin-top: 2rem; }
-h3 { font-size: 1.25rem; margin-top: 1.5rem; }
+h1 {
+   font-size: 2rem;
+   letter-spacing: 0.12em;
+   text-shadow: 0 0 20px var(--color-primary-glow);
+}
+
+h2 {
+   font-size: 1.125rem;
+   margin-top: 2rem;
+   letter-spacing: 0.1em;
+}
+
+h2::before {
+   content: "> ";
+   color: var(--color-primary);
+}
+
+h3 {
+   font-size: 1rem;
+   margin-top: 1.5rem;
+}
 
 p { margin-bottom: 1em; }
+
+/* Blinking cursor animation */
+@keyframes blink {
+   50% { opacity: 0; }
+}
+
+header h1::after {
+   content: "_";
+   color: var(--color-primary);
+   animation: blink 1s step-end infinite;
+   margin-left: 0.05em;
+}
 
 /* Links */
 a {
    color: var(--color-accent);
    text-decoration: none;
+   transition: text-shadow 0.2s ease;
 }
 
 a:hover, a:focus {
    color: var(--color-accent-hover);
    text-decoration: underline;
+   text-shadow: 0 0 8px currentColor;
 }
 
 /* Layout */
@@ -64,12 +112,12 @@ header, main, footer {
 header {
    text-align: center;
    padding: 2rem 0 1rem;
-   border-bottom: 1px solid #e5e7eb;
+   border-bottom: 1px dashed var(--color-primary-dim);
    margin-bottom: 2rem;
 }
 
 header p {
-   color: var(--color-text-light);
+   color: var(--color-text-dim);
    margin-bottom: 1rem;
 }
 
@@ -81,12 +129,16 @@ header nav {
 }
 
 header nav a {
+   font-family: var(--font-mono);
    font-size: 0.875rem;
+   letter-spacing: 0.05em;
 }
 
 /* Sections */
 section {
    margin-bottom: 2.5rem;
+   border-left: 2px solid var(--color-border);
+   padding-left: 1.25rem;
 }
 
 /* Skills - definition list */
@@ -95,12 +147,17 @@ dl {
 }
 
 dt {
+   font-family: var(--font-mono);
    font-weight: 600;
+   font-size: 0.875rem;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   color: var(--color-primary-dim);
    margin-top: 0.75rem;
 }
 
 dd {
-   color: var(--color-text-light);
+   color: var(--color-text-dim);
 }
 
 /* Lists */
@@ -113,11 +170,15 @@ li {
    margin-bottom: 0.5rem;
 }
 
+li::marker {
+   color: var(--color-primary-dim);
+}
+
 /* Projects */
 article {
    margin-bottom: 1.5rem;
    padding-bottom: 1.5rem;
-   border-bottom: 1px solid #e5e7eb;
+   border-bottom: 1px dashed var(--color-border);
 }
 
 article:last-child {
@@ -132,22 +193,38 @@ article p {
    margin-bottom: 0.5em;
 }
 
+article > a {
+   font-family: var(--font-mono);
+   font-size: 0.875rem;
+}
+
+article > a::before {
+   content: "$ ";
+   color: var(--color-primary-dim);
+}
+
 /* Footer */
 footer {
    text-align: center;
    padding: 2rem 0;
-   border-top: 1px solid #e5e7eb;
+   border-top: 1px dashed var(--color-primary-dim);
    margin-top: 2rem;
-   color: var(--color-text-light);
+   color: var(--color-text-dim);
    font-size: 0.875rem;
 }
 
 footer a {
-   color: var(--color-text-light);
+   color: var(--color-text-dim);
 }
 
 footer a:hover {
-   color: var(--color-accent);
+   color: var(--color-primary);
+}
+
+/* Text selection */
+::selection {
+   background: var(--color-primary);
+   color: var(--color-bg);
 }
 
 /* Responsive */
@@ -156,6 +233,6 @@ footer a:hover {
       font-size: 1rem;
    }
 
-   h1 { font-size: 2rem; }
-   h2 { font-size: 1.25rem; }
+   h1 { font-size: 1.5rem; }
+   h2 { font-size: 1rem; }
 }
