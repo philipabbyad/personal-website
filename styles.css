@@ -3,13 +3,19 @@
 :root {
    /* High contrast base */
    --color-bg: #0c0c0c;
-   --color-text: #e8e8e8;
-   --color-text-dim: #888888;
-   --color-border: #2a2a2a;
+   --color-text: #f0f0f0;
+   --color-text-dim: #9a9a9a;
+   --color-border: #333333;
 
-   /* One subtle accent - muted teal */
-   --color-accent: #5f9ea0;
-   --color-accent-hover: #7fbfc1;
+   /* Accent colors */
+   --color-accent: #4ecdc4;
+   --color-accent-hover: #7efcf6;
+
+   --color-warm: #e84a8e;
+   --color-warm-hover: #ff6ab0;
+
+   --color-electric: #7c6af7;
+   --color-electric-hover: #a99fff;
 
    /* Typography */
    --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
@@ -53,15 +59,22 @@ h1, h2, h3 {
 
 h1 {
    font-size: 1.75rem;
+   background: linear-gradient(90deg, var(--color-warm) 0%, var(--color-electric) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
 }
 
 h2 {
    font-size: 1rem;
    text-transform: uppercase;
    letter-spacing: 0.1em;
-   color: var(--color-text-dim);
+   color: var(--color-electric);
    margin-top: 2.5rem;
    margin-bottom: 1rem;
+   padding-bottom: 0.5rem;
+   border-bottom: 1px solid;
+   border-image: linear-gradient(90deg, var(--color-electric), transparent) 1;
 }
 
 h3 {
@@ -78,7 +91,8 @@ p { margin-bottom: 1em; }
 
 header h1::after {
    content: "_";
-   color: var(--color-accent);
+   color: var(--color-warm);
+   -webkit-text-fill-color: var(--color-warm);
    animation: blink 1.2s step-end infinite;
    margin-left: 0.05em;
    font-weight: 300;
@@ -102,7 +116,7 @@ a {
 a:hover, a:focus {
    color: var(--color-accent-hover);
    text-decoration: underline;
-   text-shadow: 0 0 8px rgba(95, 158, 160, 0.5);
+   text-shadow: 0 0 12px rgba(78, 205, 196, 0.65);
 }
 
 /* Layout */
@@ -138,7 +152,8 @@ header nav a {
 }
 
 header nav a:hover {
-   color: var(--color-accent);
+   color: var(--color-electric-hover);
+   text-shadow: 0 0 10px rgba(124, 106, 247, 0.5);
 }
 
 /* Sections */
@@ -156,7 +171,7 @@ dt {
    font-size: 0.8125rem;
    text-transform: uppercase;
    letter-spacing: 0.08em;
-   color: var(--color-text-dim);
+   color: var(--color-accent);
    margin-top: 1rem;
 }
 
@@ -176,7 +191,7 @@ li {
 }
 
 li::marker {
-   color: var(--color-text-dim);
+   color: var(--color-warm);
 }
 
 /* Projects */
@@ -193,6 +208,7 @@ article:last-child {
 article h3 {
    margin-top: 0;
    margin-bottom: 0.25em;
+   color: var(--color-warm);
 }
 
 article p {
@@ -224,7 +240,7 @@ footer a:hover {
 
 /* Text selection */
 ::selection {
-   background: var(--color-accent);
+   background: var(--color-warm);
    color: var(--color-bg);
 }
 
