@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Study Tracker - Philip Abbyad</title>
+<style>
+  :root {
+    --color-bg: #0c0c0c;
+    --color-text: #e8e8e8;
+    --color-text-dim: #888888;
+    --color-border: #2a2a2a;
+    --color-accent: #5f9ea0;
+    --color-open: #666666;
+    --color-done: #7fbf7f;
+    --color-ontime: #7fbf7f;
+    --color-early: #5f9ea0;
+    --color-late: #d9a441;
+    --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --max-width: 40rem;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); padding: 1.5rem; line-height: 1.6; }
+  main { max-width: var(--max-width); margin: 0 auto; }
+  h1 { font-family: var(--font-mono); font-size: 1.5rem; margin-bottom: 0.25rem; }
+  p.meta { color: var(--color-text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+  .day { margin-bottom: 1.75rem; }
+  .day-header { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem;
+                color: var(--color-text-dim); border-bottom: 1px solid var(--color-border); padding-bottom: 0.35rem; margin-bottom: 0.5rem; }
+  .item { font-family: var(--font-mono); font-size: 0.95rem; padding: 0.15rem 0; }
+  .item-open   { color: var(--color-open); }
+  .item-done   { color: var(--color-done); }
+  .item-ontime { color: var(--color-ontime); }
+  .item-early  { color: var(--color-early); }
+  .item-late   { color: var(--color-late); }
+  footer { margin-top: 2rem; color: var(--color-text-dim); font-size: 0.8rem; }
+  a { color: var(--color-accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Study Tracker</h1>
+  <p class="meta">Last updated: 2026-09-04 20:30 MDT</p>
+  <div class="day">
+    <div class="day-header">Mon 8/10</div>
+    <div class="item item-ontime">6.7  Data hazards (deep dive) — completed on-time</div>
+    <div class="item item-late">6.8  Control hazards (deep dive) — completed late</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Tue 8/11</div>
+    <div class="item item-ontime">6.9  Exceptions (deep dive) — completed on-time</div>
+    <div class="item item-ontime">6.11 Real Stuff: ARM/Intel pipelines (skim) — completed on-time</div>
+    <div class="item item-ontime">6.14 Fallacies and pitfalls (skim) — completed on-time</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed 8/12 — Chapter 6 complete</div>
+    <div class="item item-ontime">6.15 Concluding remarks (skim) — completed on-time</div>
+    <div class="item item-ontime">6.16 Historical perspective and further reading (skim) — completed on-time</div>
+    <div class="item item-ontime">CH 6 Quiz &amp; Practice — completed on-time</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu 8/13</div>
+    <div class="item item-ontime">7.1  Introduction (deep dive) — completed on-time</div>
+    <div class="item item-ontime">7.2  Memory technologies (deep dive) — completed on-time</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat 8/22</div>
+    <div class="item item-ontime">7.4  Measuring and improving cache performance (deep dive) — completed on-time</div>
+    <div class="item item-late">7.5  Dependable memory hierarchy (deep dive) — completed late</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon 8/24</div>
+    <div class="item item-ontime">7.6  Virtual machines (deep dive) — completed on-time</div>
+    <div class="item item-late">7.7  Virtual memory (deep dive) — completed late</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Tue 8/25</div>
+    <div class="item item-late">7.8  Framework for memory hierarchy (deep dive) — completed late</div>
+    <div class="item item-late">7.11 Redundant arrays of inexpensive disks (RAID) (deep dive) — completed late</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed 8/26</div>
+    <div class="item item-late">7.13 Real stuff: ARM/Intel memory hierarchies (skim) — completed late</div>
+    <div class="item item-late">7.14 Real Stuff: ARMv8 special instructions (skim) — completed late</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu 9/3 (today) — finish Chapter 7</div>
+    <div class="item item-ontime">7.16 Fallacies and pitfalls (skim) — completed on-time</div>
+    <div class="item item-ontime">7.17 Concluding remarks (skim) — completed on-time</div>
+    <div class="item item-ontime">7.18 Historical perspective and further reading (skim) — completed on-time</div>
+    <div class="item item-ontime">CH 7 Quiz &amp; Practice — completed on-time</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri 9/4</div>
+    <div class="item item-early">8.1  Introduction (deep dive) — completed early</div>
+    <div class="item item-early">8.2  Difficulty of parallel programs (deep dive) — completed early</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat 9/5</div>
+    <div class="item item-early">8.3  SISD, MIMD, SIMD, SPMD, and vector (deep dive) — completed early</div>
+    <div class="item item-early">8.4  Hardware multithreading (deep dive) — completed early</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun 9/6</div>
+    <div class="item item-open">8.5  Multicore and other shared memory multiprocessors (deep dive) — completed early</div>
+    <div class="item item-open">8.11 Real stuff: Benchmarking Intel vs NVIDIA (skim)</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon 9/7 — Chapter 8 / core content complete</div>
+    <div class="item item-open">8.13 Fallacies and pitfalls (skim)</div>
+    <div class="item item-open">8.14 Concluding remarks (skim)</div>
+    <div class="item item-open">8.15 Historical perspective and further reading (skim)</div>
+    <div class="item item-open">CH 8 Quiz &amp; Practice</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Tue 9/8</div>
+    <div class="item item-open">Practice Assessment (PA) — retake</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed 9/9</div>
+    <div class="item item-open">Review PA results, targeted study on weak areas</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu 9/10</div>
+    <div class="item item-open">Objective Assessment (OA) — attempt 1</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri 9/11</div>
+    <div class="item item-open">Buffer — review weak areas from OA attempt 1 (if needed)</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat 9/12</div>
+    <div class="item item-open">Buffer — continued review</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun 9/13</div>
+    <div class="item item-open">Buffer — final review before retake</div>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon 9/14 — target completion date</div>
+    <div class="item item-open">Objective Assessment (OA) — retake, only if needed</div>
+  </div>
+  <footer>Generated automatically by study-log.sh</footer>
+</main>
+</body>
+</html>
